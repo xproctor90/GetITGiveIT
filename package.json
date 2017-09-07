@@ -1,0 +1,23 @@
+{
+  "name": "getitgiveit",
+  "version": "1.0.0",
+  "description": "a friendly gift giving application",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xproctor90/GetITGiveIT.git"
+  },
+  "keywords": [
+    "gifts"
+  ],
+  "author": "various",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xproctor90/GetITGiveIT/issues"
+  },
+  "homepage": "https://github.com/xproctor90/GetITGiveIT#readme"
+}
