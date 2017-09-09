@@ -1,0 +1,40 @@
+.jumbotron {
+	background: #ADFF2F;
+	font-family: 'Orbitron', sans-serif;
+	text-align: center;
+     color: white;
+     background-color: rgba(0,0,0,0.3);
+     min-width: 800px;
+}
+
+.logo {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+	background: #00BFFF;
+	font-family: 'Orbitron', sans-serif;
+	 background: url('../img/giftbox.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+   }
+
+}
+
+hr {
+	border-color: inherit;
+	    margin: 1em 0;
+}
+
+footer, h1, h2, h3, h4 {
+	color: #F0F8FF;
+}
+
+#resultsModal img {
+	overflow: hidden;
+	width: 500px;
+}

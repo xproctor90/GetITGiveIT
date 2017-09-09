@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title> GiveIT GiftIT </title>
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <!-- Font Awesome Glyphicons -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+
+  <!-- Chosen -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+<!--my style sheet -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron">
+
+    <img src="./img/giveitgiftit.png" class="logo" alt="Mates logo" />     
+      <h1 class=""> Get Your Perfect Gift </h1>
+
+      <hr>
+      <h2> Get ready to find your perfect gift! </h2>
+    </div>
+    <h2>Survey Questions</h2>
+    <hr>
+    <h3><strong>Basic Gift Info</strong></h3>
+    <h4>Name of Recipient (Required)</h4>
+    <input type="text" name="" id="name" class="form-control" required>
+    <h4>Photo Image of Recipient (Required)</h4>
+    <input type="text" name="" id="photo" class="form-control" required>
+    <hr>
+
+
+    <h3><strong>Question 1</strong></h3>
+    <h4>What category would your interest your loved one the most?</h4>
+    <select data-placeholder="" class="chosen-select" id="q100">
+      <option value=""></option>
+      <option value="1">Go out on the Town!</option>
+      <option value="2">Spa Day</option>
+      <option value="3">Eat out!</option>
+      <option value="4">Goods!(Electronics, Toys and Tools)</option>
+      <option value="5">Go on Vacation</option>
+      <option value="6">Fitness! </option>
+      <option value="7">Cars good!</option>
+      <option value="8"> Bargain Shopping </option>
+
+    </select>
+
+
+    <h3><strong>Question 1</strong></h3>
+    <h4>What Holiday is this Gift for?</h4>
+    <select data-placeholder="" class="chosen-select" id="q1">
+      <option value=""></option>
+      <option value="1"> Graduation</option>
+      <option value="2">Christmas</option>
+      <option value="3">V-Day</option>
+      <option value="4">Anniversary</option>
+      <option value="5">Birthday</option>
+      <option value="6">Fathers Day</option>
+      <option value="7">Mother Day</option>
+
+    </select>
+
+    <h3><strong>Question 2</strong></h3>
+    <h4>How old is your loved one?</h4>
+    <select data-placeholder="" class="chosen-select" id="q2">
+      <option value=""></option>
+      <option value="1">Child(5-9)</option>
+      <option value="2">Pre Teen(10-13)</option>
+      <option value="3">Teen(14-18)</option>
+      <option value="4">College Student(19-22)</option>
+      <option value="5">Young Adult(23-29)</option>
+      <option value="6">Adult(30-39)</option>
+      <option value="7">40 plus</option>
+      <option value="8">55 plus</option>
+
+    </select>
+    <h3><strong>Question 3</strong></h3>
+    <h4>Whats your price range?</h4>
+    <select data-placeholder="" class="chosen-select" id="q3">
+      <option value=""></option>
+      <option value="1">$10</option>
+      <option value="2">$20</option>
+      <option value="3">$30</option>
+      <option value="4">$50</option>
+      <option value="5">$75</option>
+      <option value="6">$100</option>
+      <option value="7">$150</option>
+      <option value="8">$200</option>
+      <option value="9">$250</option>
+      <option value="10">$1000</option>
+      <option value="11">No Price</option>
+    </select>
+
+    <h3><strong>Question 4</strong></h3>
+    <h4>What is your loved ones favorite sport?</h4>
+    <select data-placeholder="" class="chosen-select" id="q4">
+      <option value=""></option>
+      <option value="1">Football</option>
+      <option value="2">Basketball</option>
+      <option value="3">Baseball/Softball</option>
+      <option value="4">Lacrosse</option>
+      <option value="5">Tennis</option>
+      <option value="6">Golf</option>
+      <option value="7">Soccer</option>
+      <option value="8">Ice Hockey</option>
+      <option value="9">Mottor Racing Sports</option>
+      <option value="10">Wrestling</option>
+    </select>
+
+    <h3><strong>Question 5</strong></h3>
+    <h4>Does your loved one like to cook?</h4>
+    <select data-placeholder="" class="chosen-select" id="q5">
+      <option value=""></option>
+      <option value="1"> No!</option>
+      <option value="2"> Yes!</option>
+    </select>
+
+    <h3><strong>Question 6</strong></h3>
+    <h4>What is your loved ones favorite movie genre?</h4>
+    <select data-placeholder="" class="chosen-select" id="q6">
+      <option value=""></option>
+      <option value="1">Horror</option>
+      <option value="2">Commedy</option>
+      <option value="3">Docuentary</option>
+      <option value="4">Romance</option>
+      <option value="5">Romantic Commedy</option>
+      <option value="6">Animation</option>
+      <option value="7">Action</option>
+      <option value="8">Thriller</option>
+      <option value="9">Sci Fi</option>
+      <option value="10">Drama</option>
+    </select>
+
+    <h3><strong>Question 7</strong></h3>
+    <h4>Does your loved one like(or need) to workout?</h4>
+    <select data-placeholder="" class="chosen-select" id="q7">
+      <option value=""></option>
+      <option value="1">1 (...Naww I'm Cool)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Heck Yea!)</option>
+    </select>
+
+    <h3><strong>Question 8</strong></h3>
+    <h4>What does your person like to do on weekends?</h4>
+    <select data-placeholder="" class="chosen-select" id="q8">
+      <option value=""></option>
+      <option value="1">Workout(lift weights, crossfit, run a 5k, play sports)</option>
+      <option value="2">Go to the movies</option>
+      <option value="3">Go out to eat</option>
+      <option value="4">Go for Drinks</option>
+      <option value="5">Play Video Games</option>
+      <option value="6">Spa</option>
+      <option value="7">Sleep/Relax</option>
+      <option value="8">Get Makeover</option>
+      <option value="9">Go shopping</option>
+
+
+
+    </select>
+
+    <h3><strong>Question 9</strong></h3>
+    <h4>I eat very healthy</h4>
+    <select data-placeholder="" class="chosen-select" id="q9">
+      <option value=""></option>
+      <option value="1">1 (...Naww I'm Cool)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Heck Yea!)</option>
+    </select>
+    
+    <h3><strong>Question 10</strong></h3>
+    <h4>I like to workout in large groups</h4>
+    <select data-placeholder="" class="chosen-select" id="q10">
+      <option value=""></option>
+      <option value="1">1 (...Naww I'm Cool)</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5 (Heck Yea!)</option>
+    </select>
+    <br>
+    <br>
+    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i> Submit
+    </button>
+    <br>
+    <br>
+    <footer class="footer text-center">
+      <div class="container">
+            <p><a href="">About Team Impossible Burger</a> | <a href="https://github.com/xproctor90/GetITGiveIT">GitHub Repo</a>
+          <br> &copy; 2017 Team Impossible Burger</p>
+      </div>
+    </footer>
+  </div>
+  <!-- Modal -->
+  <div id="resultsModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title"><strong>Best Buddy</strong></h2>
+        </div>
+        <div class="modal-body">
+          <h2 id="matchName"></h2>
+          <img id="matchImg" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+
+</html>
