@@ -1,20 +1,21 @@
 const getItems=require('../controllers/gift_controller').getItems;
-const expect=require("chai").expect;
+
 function lengthTest(count){
-	var items=getItems("eletronics", count, getArray);
+	var items=getItems("health-and-fitness", count, getArray);
 }	 
 
 function getArray(respond){
-	console.log(respond);
+	respond.map(v => {
+		console.log(JSON.stringify(v,null,2));
+	})
+	//console.log("respond"+JSON.stringify(respond));
 }
-lengthTest(2);
+lengthTest(10);
 
 // describe("test ajax call", function(done){
 // 	it("should return 2 eletronics", function(){
-// 		console.log(respond)
+// 		expect.lengthTest(10)
 // 	})
-// 	it("should return 10 eletronics", function(){
-// 		expect(lengthTest(10)).to.equal(10)
-// 	})
-
-// })
+	// it("should return 10 eletronics", function(){
+	// 	expect(lengthTest(10)).to.equal(10)
+	// })
