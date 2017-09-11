@@ -24,8 +24,23 @@ models.sequelize.sync().then(function() {
  
 });
 
+app.get('/', function(req, res) {
+ 
+    res.send('Welcome to Passport with Sequelize');
+ 
+});
+ 
+ 
+app.listen(8080, function(err) {
+ 
+    if (!err)
+        console.log("Site is live");
+    else console.log(err)
+ 
+});
+
 //For Handlebars
-app.set('views', './app/views');
+app.set('views', './views');
 app.engine('hbs', exphbs({
     extname: '.hbs'
 }));
