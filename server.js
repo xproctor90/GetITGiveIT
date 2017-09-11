@@ -1,3 +1,4 @@
+
 var express = require('express');
 var app = express();
 var passport = require('passport');
@@ -24,9 +25,11 @@ models.sequelize.sync().then(function() {
  
 });
 
+
 //For Handlebars
 app.set('views', './app/views');
 app.engine('hbs', exphbs({
     extname: '.hbs'
 }));
 app.set('view engine', '.hbs');
+>>>>>>> master
