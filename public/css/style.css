@@ -38,3 +38,22 @@ footer, h1, h2, h3, h4 {
 	overflow: hidden;
 	width: 500px;
 }
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
