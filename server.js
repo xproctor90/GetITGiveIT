@@ -6,6 +6,7 @@ var bodyParser = require('body-parser');
 var env = require('dotenv').load();
 var exphbs = require('express-handlebars');
 var path = require('path');
+app.use(express.static(__dirname + '/public'));
 
 
 //Models
@@ -34,9 +35,11 @@ app.listen(8080, function(err) {
 });
 
 //For Handlebars
-app.set('views', './views');
+app.set('views', 'public/views');
 app.engine('hbs', exphbs({
-    extname: '.hbs'
+    extname: '.hbs',
+    defaultLayout: "main",
+    layoutsDir: "public/views/layouts"
 }));
 app.set('view engine', '.hbs');
 
