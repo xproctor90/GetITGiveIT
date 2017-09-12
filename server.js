@@ -5,6 +5,7 @@ var session = require('express-session');
 var bodyParser = require('body-parser');
 var env = require('dotenv').load();
 var exphbs = require('express-handlebars');
+var path = require('path');
 
 
 //Models
@@ -24,13 +25,6 @@ models.sequelize.sync().then(function() {
  
 });
 
-app.get('/', function(req, res) {
- 
-    res.send('Welcome to Passport with Sequelize');
- 
-});
- 
- 
 app.listen(8080, function(err) {
  
     if (!err)
@@ -45,3 +39,11 @@ app.engine('hbs', exphbs({
     extname: '.hbs'
 }));
 app.set('view engine', '.hbs');
+
+app.get('/', function(req, res) {
+  res.render("home.hbs");
+}); 
+
+app.get('/survey', function(req, res) {
+	res.render("survey.hbs");
+});
