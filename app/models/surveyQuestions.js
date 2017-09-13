@@ -1,6 +1,6 @@
 module.exports = function(sequelize, Sequelize) {
  
-    var User = sequelize.define('surveyQuestions', {
+    var surveyQuestions = sequelize.define('surveyQuestions', {
  
         id: {
             autoIncrement: true,
