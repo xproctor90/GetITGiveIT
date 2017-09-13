@@ -14,7 +14,9 @@ request({
 });
 
 //app.post ()
-function grouponItems(category, count, callback){//express handler - get
+//function grouponItems(category, count, callback){//express handler - get
+	var category='eletronic'
+	var count='2'
 	var url='https://partner-api.groupon.com/deals.json?tsToken=US_AFF_0_201236_212556_0&filters=category:'+category+'&offset=0&limit='+count
 	console.log(url)
 	request({
@@ -26,11 +28,13 @@ function grouponItems(category, count, callback){//express handler - get
 	  for(var i=0; i<x["deals"].length;i++){
 	  	respond.push({dealTitle: x.deals[i].title, dealurl: x.deals[i].dealUrl, image: x.deals[i].smallImageUrl});
 	  }
-	  callback(respond);//res.render({name: respond}) 
+	  res.render("gift", { gift: respond });
+
+	 // callback(respond)
 	});
 
 
 
-}
+/}
 
 module.exports.getItems=grouponItems;
