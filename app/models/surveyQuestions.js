@@ -1,6 +1,6 @@
 module.exports = function(sequelize, Sequelize) {
  
-    var User = sequelize.define('surveyAnswers', {
+    var User = sequelize.define('surveyQuestions', {
  
         id: {
             autoIncrement: true,
@@ -14,6 +14,6 @@ module.exports = function(sequelize, Sequelize) {
         }
     });
  
-    return surveyAnswers;
+    return surveyQuestions;
  
 }
