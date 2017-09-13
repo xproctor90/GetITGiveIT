@@ -12,9 +12,7 @@ app.use(express.static(__dirname + '/public'));
 //Models
 var models = require("./app/models");
 
-//Routes
-var authRoute = require('./app/routes/auth.js')(app);
- 
+//Routes 
 //Sync Database
 models.sequelize.sync().then(function() {
  
@@ -35,18 +33,17 @@ app.listen(8080, function(err) {
 });
 
 //For Handlebars
-app.set('views', 'public/views');
+
 app.engine('hbs', exphbs({
     extname: '.hbs',
     defaultLayout: "main",
     layoutsDir: "public/views/layouts"
 }));
-app.set('view engine', '.hbs');
 
-app.get('/', function(req, res) {
-  res.render("home.hbs");
-}); 
+var authRoute = require('./app/routes/auth.js')(app);
 
-app.get('/survey', function(req, res) {
-	res.render("survey.hbs");
-});
+
+require('./controllers/gift_controller.js')(app);
+
+
+
