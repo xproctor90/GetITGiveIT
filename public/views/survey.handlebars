@@ -2,10 +2,9 @@
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">Home</a>
-  <a href="#">Users</a>
-  <a href="#">Survey</a>
-  <a href="#">My Gifts</a>
+  <a href="/">Home</a>
+  <a href="/useradd">Users</a>
+  <a href="/gift">My Gifts</a>
   </div>
 
 <h2></h2>
@@ -20,11 +19,11 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
-</script>s
+</script>
   <div class="container">
     <div class="jumbotron">
 
-      <h1 class=""> Get Your Perfect Gift </h1>
+       <h1 class=""> Get Your Perfect Gift </h1>
 
       <hr>
       <h2> Get ready to find your perfect gift! </h2>
@@ -32,15 +31,13 @@ function closeNav() {
     <h2>Survey Questions</h2>
     <hr>
     <h3><strong>Basic Gift Info</strong></h3>
-    <h4>Name of Recipient (Required)</h4>
+    <h4>Name</h4>
     <input type="text" name="" id="name" class="form-control" required>
-    <h4>Photo Image of Recipient (Required)</h4>
-    <input type="text" name="" id="photo" class="form-control" required>
     <hr>
 
 
     <h3><strong>Question</strong></h3>
-    <h4>What category would your interest your loved one the most?</h4>
+    <h4>What category would your interest you one the most?</h4>
     <select data-placeholder="" class="chosen-select" id="q100">
       <option value=""></option>
       <option value="Things to Do">Go out on the Town!</option>
@@ -52,7 +49,6 @@ function closeNav() {
       <option value="Automotive">Cars good!</option>
       <option value="Toys">Toys!</option>
     </select>
-
     <br>
     <br>
     <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i> Submit
