@@ -16,7 +16,7 @@ module.exports = {
         id: 1,
         userId: 1,
         surveyQuestionId: 1,
-        response: "electronics",
+        response: "food-and-drink",
         createdAt: new Date(),
         updatedAt: new Date()
        }],
