@@ -1,4 +1,14 @@
-<body>
+
+
+{{#each respond}}
+  <p>Title: {{dealTitle}}</p>
+  <a href="{{dealURL}}"/>
+  <image src="{{dealImage}}"/>
+  <hr>
+{{/each}}
+
+
+
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="#">Home</a>
@@ -28,6 +38,18 @@ function closeNav() {
       <h2 class="">  Gift Results </h2>
       <br>
       <h2> Top 5 Gifts </h2>
+
+
+          {{#each gift}}
+            <p>Title: {{dealTitle}}</p>
+            <a href="{{dealURL}}"/>
+            <image src="{{dealImage}}"/>
+            <hr>
+          {{/each}}
+
+
+
+
       <div class="">
         <a href="/survey">
           <button type="button" class="btn btn-lg btn-primary">

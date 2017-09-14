@@ -1,5 +1,6 @@
 var express = require('express');
 const request = require('ajax-request');
+const db= require("../app/models")
 
 
 module.exports=function (app){
@@ -34,33 +35,32 @@ app.get('/survey', function(req, res) {
 
 
 app.get('/gift/:id', function (req, res){
-db.nameofodel.findeOne({
+db.surveyAnswers.findOne({
       where: {
-        id: req.params.id
+        userId: req.params.id
       },
      
+     
     }).then(function(dbAuthor) {
-  
+
+    
+  //console.log(dbAuthor.dataValues.response)
 
        
-  
-
-
-//function grouponItems(category, count, callback){//express handler - get
-	var category='electronics'
 	
-	var url='https://partner-api.groupon.com/deals.json?tsToken=US_AFF_0_201236_212556_0&filters=category:'+category+'&offset=0&limit=5'
+	
+	var url='https://partner-api.groupon.com/deals.json?tsToken=US_AFF_0_201236_212556_0&filters=category:'+dbAuthor.dataValues.response+'&offset=0&limit=5'
 	console.log(url)
 	request({
 	  url:url
 	}, function(err, resp, body) {
 		var x= JSON.parse(body)
-		//console.log(x.deals);
+		console.log(x.deals);
 	  var respond=[];
 	  for(var i=0; i<x["deals"].length;i++){
 	  	respond.push({dealTitle: x.deals[i].title, dealURL: x.deals[i].dealUrl, dealImage: x.deals[i].smallImageUrl});
 	  }
-		//console.log(respond)
+		console.log(respond)
 
 	  res.render("gift", { gift: respond });
 
