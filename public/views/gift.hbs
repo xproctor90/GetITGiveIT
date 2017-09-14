@@ -1,18 +1,44 @@
+<body>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Home</a>
+  <a href="#">Users</a>
+  <a href="#">Survey</a>
+  <a href="#">My Gifts</a>
+  </div>
 
+<h2></h2>
+<p></p>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
   <div class="container">
     <div class="jumbotron">
 
-      
-      <h1 class=""> Gift Results!</h1>
-      <hr>
-      <h2 class=""> Top 5 gifts</h2>
-      
-
+      <h1 class=""> GiveITGiftIT</h1>
       <br>
+      <h2 class="">  Gift Results </h2>
+      <br>
+      <h2> Top 5 Gifts </h2>
       <div class="">
         <a href="/survey">
           <button type="button" class="btn btn-lg btn-primary">
-            <h4><span class="glyphicon glyphicon-list-alt"></span> Wants to find another gift? Go back to Survery</h4></button>
+            <h4><span class="glyphicon glyphicon-gift"></span> GetIT</h4></button>
+        </a>
+      </div>
+      <br>
+      <div class="">
+        <a href="/user">
+          <button type="button" class="btn btn-lg btn-primary">
+            <h4><span class="glyphicon glyphicon-tree-conifer"></span> GiveIT</h4></button>
         </a>
       </div>
     </div>
@@ -23,3 +49,4 @@
       </div>
     </footer>
   </div>
+</body>

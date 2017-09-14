@@ -1,4 +1,26 @@
 <body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Home</a>
+  <a href="#">Users</a>
+  <a href="#">Survey</a>
+  <a href="#">My Gifts</a>
+  </div>
+
+<h2></h2>
+<p></p>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
   <div class="container">
     <div class="jumbotron">
 
@@ -12,8 +34,6 @@
     <h3><strong>Basic Gift Info</strong></h3>
     <h4>Name of Recipient (Required)</h4>
     <input type="text" name="" id="name" class="form-control" required>
-    <h4>Photo Image of Recipient (Required)</h4>
-    <input type="text" name="" id="photo" class="form-control" required>
     <hr>
 
 
