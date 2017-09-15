@@ -42,8 +42,8 @@ app.engine('hbs', exphbs({
 
 var authRoute = require('./app/routes/auth.js')(app);
 
-
 require('./controllers/gift_controller.js')(app);
+require('./controllers/usercontroller.js');
 
 
 

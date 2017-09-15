@@ -17,6 +17,10 @@ app.get('/survey', function(req, res) {
 	res.render("survey.hbs");
 });
 
+app.get('/users', function(req, res) {
+	res.render("user.hbs");
+});
+
 
 
  // app.get("/api/authors/:id", function(req, res) {
