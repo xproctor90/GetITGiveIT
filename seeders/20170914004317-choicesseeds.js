@@ -16,7 +16,7 @@ module.exports = {
         id: 1,
         surveyQuestionID: 1,
         choice: "technology",
-        grouponLabel: "electronics",
+        grouponLabel: "food-and-drink",
         createdAt: new Date(),
         updatedAt: new Date()
        },
