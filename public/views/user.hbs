@@ -26,8 +26,16 @@ function closeNav() {
 
       <h1 class=""> GiveITGiftIT Users </h1>
       <hr>
-      <h2 class=""> Recent Gifts! </h2>
       <br>
+      <ul>
+  {{#each users}}
+    {{#if this.active}}
+      <li>
+        {{this.firstname}}
+      </li>
+    {{/if}}
+  {{/each}}
+</ul>
       <div class="">
         <a href="/survey.html">
           <button type="button" class="btn btn-lg btn-primary">
