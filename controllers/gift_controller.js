@@ -17,10 +17,26 @@ app.get('/survey', function(req, res) {
 	res.render("survey.hbs");
 });
 
-app.get('/users', function(req, res) {
-	res.render("user.hbs");
-});
+// app.get('/users', function(req, res) {
+// 	res.render("user", {users: });
+// });
 
+
+
+
+app.get("/users", function(req, res) {
+  
+db.user.findAll({
+     
+     
+     
+    }).then(function(data) {
+
+    	console.log("data" + data)
+    res.render("user", { users: data });
+
+  });
+});
 
 
  // app.get("/api/authors/:id", function(req, res) {
@@ -47,6 +63,7 @@ db.surveyAnswers.findOne({
      
     }).then(function(dbAuthor) {
 
+
     
   //console.log(dbAuthor.dataValues.response)
 
@@ -62,7 +79,7 @@ db.surveyAnswers.findOne({
 		console.log(x.deals);
 	  var respond=[];
 	  for(var i=0; i<x["deals"].length;i++){
-	  	respond.push({dealTitle: x.deals[i].title, dealURL: x.deals[i].dealUrl, dealImage: x.deals[i].smallImageUrl});
+	  	respond.push({dealTitle: x.deals[i].title, dealURL: x.deals[i].dealUrl, dealImage: x.deals[i].largeImageUrl});
 	  }
 		console.log(respond)
 
