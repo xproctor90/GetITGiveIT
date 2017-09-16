@@ -29,17 +29,20 @@ function closeNav() {
       <br>
       <ul>
   {{#each users}}
-    {{#if this.active}}
-      <li>
-        {{this.firstname}}
-      </li>
-    {{/if}}
+  {{#if this.status}}
+        <br>
+        {{this.firstname}} 
+        {{this.lastname}}
+        <br>
+         <a href="http://localhost:8080/gift/1">
+        <button type="button" class="btn btn-lg btn-success">  find a gift for {{this.firstname}} </button>
+    {{/if}} 
   {{/each}}
 </ul>
-      <div class="">
+      <div class="geITbutton">
         <a href="/survey.html">
           <button type="button" class="btn btn-lg btn-primary">
-            <h4><span class="glyphicon glyphicon-list-alt"></span> Find a Gift!</h4></button>
+            <h4><span class="glyphicon glyphicon-list-alt"></span> Get It!</h4></button>
         </a>
       </div>
     </div>
