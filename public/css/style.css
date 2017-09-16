@@ -6,7 +6,13 @@
      background-color: rgba(0,0,0,0.3);
      min-width: 800px;
 }
+.geITbutton{
 
+    position: absolute;
+    left: 65px;
+    bottom:100px;
+    margin-bottom: auto;
+}
 .logo {
 	display: block;
 	margin-left: auto;
@@ -40,7 +46,7 @@ footer, h1, h2, h3, h4 {
 }
 /* unvisited link */
 a:link {
-    color: red;
+    color: white;
 }
 
 /* visited link */

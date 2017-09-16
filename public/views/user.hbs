@@ -2,10 +2,9 @@
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">Home</a>
-  <a href="#">Users</a>
-  <a href="#">Survey</a>
-  <a href="#">My Gifts</a>
+  <a href="/">Home</a>
+  <a href="/users">Users</a>
+  <a href="/survey">Survey</a>
   </div>
 
 <h2></h2>
@@ -24,25 +23,22 @@ function closeNav() {
   <div class="container">
     <div class="jumbotron">
 
-      <h1 class=""> GiveITGiftIT Users </h1>
+      <h1 class=""> GetITGiveIT Users </h1>
       <hr>
       <br>
       <ul>
   {{#each users}}
-    {{#if this.active}}
-      <li>
-        {{this.firstname}}
-      </li>
-    {{/if}}
+  {{#if this.status}}
+        <br>
+        {{this.firstname}} 
+        {{this.lastname}}
+        <br>
+         <a href="http://localhost:8080/gift/1">
+        <button type="button" class="btn btn-lg btn-success">  find a gift for {{this.firstname}} </button>
+    {{/if}} 
   {{/each}}
 </ul>
-      <div class="">
-        <a href="/survey.html">
-          <button type="button" class="btn btn-lg btn-primary">
-            <h4><span class="glyphicon glyphicon-list-alt"></span> Find a Gift!</h4></button>
-        </a>
-      </div>
-    </div>
+          </div>
     <footer class="footer text-center">
       <div class="container">
         <p><a href="">About Team Impossible Burger</a> | <a href="https://github.com/xproctor90/giveitgiftit">GitHub Repo</a>
