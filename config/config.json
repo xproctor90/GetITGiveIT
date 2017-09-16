@@ -1,7 +1,7 @@
 {
   "development": {
-    "username": "sqluser",
-    "password": "root",
+    "username": "root",
+    "password": "9016NCCU",
     "database": "getgift_db",
     "host": "127.0.0.1",
     "dialect": "mysql"
