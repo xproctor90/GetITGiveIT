@@ -22,7 +22,16 @@ app.get('/survey', function(req, res) {
 // });
 
 
-
+app.post("/api/new", function(req, res) {
+    console.log("Book Data:");
+    console.log(req.body);
+    user.create({
+      firstname: req.body.firstname,
+      lastname: req.body.lastname,
+      username: req.body.username,
+      password: req.body.password
+    });
+  });
 
 app.get("/users", function(req, res) {
   
