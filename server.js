@@ -23,8 +23,8 @@ models.sequelize.sync().then(function() {
     console.log(err, "Something went wrong with the Database Update!")
  
 });
-
-app.listen(8080, function(err) {
+var port = process.env.PORT || 8080;
+app.listen(port, function(err) {
  
     if (!err)
         console.log("Site is live");
