@@ -2,8 +2,8 @@
 {
  "development": {
   "username": "root",
-  "password": "password",
-  "database": "database",
+  "password": "chen8722!",
+  "database": "getgift_db",
   "host": "localhost",
   "dialect": "mysql"
  },
@@ -17,7 +17,8 @@
  "production": {
   "username": "c1bq8i86rdbdkocg",
   "password": "xhwgi661wy3v0o9w",
-  "database": "",
+  "database": "test",
   "host": "ysp9sse09kl0tzxj.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
   "dialect": "mysql"
  }
+}

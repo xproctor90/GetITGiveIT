@@ -7,6 +7,7 @@ var env = require('dotenv').load();
 var exphbs = require('express-handlebars');
 var path = require('path');
 app.use(express.static(__dirname + '/public'));
+app.use(bodyParser.urlencoded({ extended: false }));
 
 
 //Models
@@ -40,7 +41,7 @@ app.engine('hbs', exphbs({
     layoutsDir: "public/views/layouts"
 }));
 
-var authRoute = require('./app/routes/auth.js')(app);
+//var authRoute = require('./app/routes/auth.js')(app);
 
 require('./controllers/gift_controller.js')(app);
 require('./controllers/usercontroller.js');
