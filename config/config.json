@@ -1,13 +1,24 @@
+
 {
-  "development": {
-    "username": "sqluser",
-    "password": "root",
-    "database": "getgift_db",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  "production": {
-    "use_env_variable": "JAWSDB_URL",
-    "dialect": "mysql"
-  }
+ "development": {
+  "username": "root",
+  "password": "chen8722!",
+  "database": "getgift_db",
+  "host": "localhost",
+  "dialect": "mysql"
+ },
+ "test": {
+  "username": "root",
+  "password": null,
+  "database": "database_test",
+  "host": "127.0.0.1",
+  "dialect": "mysql"
+ },
+ "production": {
+  "username": "c1bq8i86rdbdkocg",
+  "password": "xhwgi661wy3v0o9w",
+  "database": "test",
+  "host": "ysp9sse09kl0tzxj.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+  "dialect": "mysql"
+ }
 }
