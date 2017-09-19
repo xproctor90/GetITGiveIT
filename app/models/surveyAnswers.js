@@ -24,6 +24,20 @@ module.exports = function(sequelize, Sequelize) {
         }
     });
  
+
+
+        surveyAnswers.associate = function(models) {
+    // We're saying that a Post should belong to an Author
+    // A Post can't be created without an Author due to the foreign key constraint
+            surveyAnswers.belongsTo(models.user, {
+                foreignKey: {
+                allowNull: false
+             }
+            });
+         };
+
+  
     return surveyAnswers;
  
 }
+
